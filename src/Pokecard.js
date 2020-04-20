@@ -7,7 +7,7 @@ function Pokecard({ id, name, type, base_experience }) {
     border: "1px solid #333",
     borderRadius: "6px",
     backgroundColor: "#ccc",
-    minWidth: "250px",
+    minWidth: "200px",
     display: "inline-block",
     margin: "10px"
   }

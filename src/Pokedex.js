@@ -4,7 +4,7 @@ import './Pokedex.css';
 
 // who should be using this? where does it fit in?
 // what gets passed into it?
-function Pokedex({ pokemonList }) {
+function Pokedex({ pokemonList, score, isWinner }) {
   return (
     <div className="Pokedex">
       { pokemonList.map(p => <Pokecard 
@@ -14,6 +14,8 @@ function Pokedex({ pokemonList }) {
           base_experience={p.base_experience}
           key={p.id} />
       )}
+      <p>{score}</p>
+      <p>{isWinner ? "THIS HAND WINS" : ""}</p>
     </div>
   );
 }
